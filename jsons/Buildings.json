@@ -1,25 +1,249 @@
 [
-	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
-		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
-		"requiredTech": "Horseback Riding"
-	},
-	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
+  {
+    "name": "Temple of Solomon",
+    "replaces": "Temple",
+    "uniqueTo": "Phantom Nation",
+    "faith": 5,
+    "culture": 3,
+    "gold": 2,
+    "cost": 150,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Provides 2 Gold per Incense resource",
+      "Provides 1 Happiness for every 10 Gold produced in this city"
+    ]
+  },
+  {
+    "name": "Metaverse Gate",
+    "replaces": "Monument",
+    "uniqueTo": "Phantom Nation",
+    "culture": 2,
+    "gold": 1,
+    "faith": 1,
+    "cost": 60,
+    "requiredTech": "Pottery",
+    "uniques": [
+      "Provides 1 Happiness for every 10 Gold produced in this city",
+      "Spies operate 25% faster"
+    ]
+  },
+  {
+    "name": "LeBlanc Attic",
+    "cost": 300,
+    "uniqueTo": "Phantom Nation",
+    "culture": 8,
+    "production": 4,
+    "requiredTech": "Drama and Poetry",
+    "requiredBuildings": ["Metaverse Gate"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+15% Strength for all units",
+      "Provides 1 Happiness for every 10 Gold produced in this city",
+      "Provides +4 Culture for every Spy owned"
+    ]
+  },
+  {
+    "name": "Golden Vault",
+    "replaces": "Market",
+    "uniqueTo": "Palace Universe",
+    "gold": 7,
+    "culture": 2,
+    "cost": 150,
+    "requiredTech": "Currency",
+    "uniques": [
+      "+25% Gold from trade routes",
+      "+1 Happiness for every 10 Gold produced in this city"
+    ]
+  },
+  {
+    "name": "Treasury of Avarice",
+    "replaces": "Bank",
+    "uniqueTo": "Palace Universe",
+    "gold": 10,
+    "culture": 2,
+    "cost": 250,
+    "requiredTech": "Banking",
+    "uniques": [
+      "+1 Gold for every citizen in this city",
+      "Provides 1 Happiness for every 10 Gold produced in this city",
+      "Doubles Gold earned from pillaging tiles"
+    ]
+  },
+  {
+    "name": "Hall of Excess",
+    "replaces": "Temple",
+    "uniqueTo": "Palace Universe",
+    "cost": 200,
+    "faith": 2,
+    "culture": 3,
+    "requiredTech": "Philosophy",
+    "uniques": [
+      "Provides 2 Gold per Luxury Resource worked by this city",
+      "Provides 1 Happiness for every Luxury Resource in the empire"
+    ]
+  },
+  {
+    "name": "Vault of Desire",
+    "cost": 450,
+    "uniqueTo": "Palace Universe",
+    "gold": 12,
+    "culture": 4,
+    "requiredTech": "Printing Press",
+    "requiredBuildings": ["Hall of Excess"],
+    "isNationalWonder": true,
+    "uniques": [
+      "Provides +2 Happiness for every Luxury Resource in the empire",
+      "Provides 1 Happiness for every 10 Gold produced in this city",
+      "Provides 1 Happiness for every 10 Culture produced in this city"
+    ]
+  },
+  {
+    "name": "Crown of Greed",
+    "cost": 400,
+    "uniqueTo": "Palace Universe",
+    "gold": 15,
+    "culture": 5,
+    "requiredTech": "Banking",
+    "requiredBuildings": ["Treasury of Avarice"],
+    "isNationalWonder": true,
+    "uniques": [
+      "Provides +1 Gold for every Luxury Resource in the empire",
+      "+50% Gold from trade routes originating in the capital",
+      "Provides 1 Happiness for every 10 Gold produced in this city"
+    ]
+  },
+  {
+    "name": "Warrior's Arena",
+    "replaces": "Barracks",
+    "uniqueTo": "Ryuji's Haven",
+    "cost": 90,
+    "requiredTech": "Bronze Working",
+    "uniques": [
+      "Units trained in this city gain +15% Strength",
+      "Provides 1 Culture per garrisoned land unit",
+      "Reduces unit maintenance by 10%"
+    ]
+  },
+  {
+    "name": "Forge of Wrath",
+    "replaces": "Workshop",
+    "uniqueTo": "Ryuji's Haven",
+    "cost": 180,
+    "production": 5,
+    "requiredTech": "Metal Casting",
+    "uniques": [
+      "+25% Production for land units",
+      "Provides 1 Gold for every garrisoned unit",
+      "Units trained in this city gain +10 XP"
+    ]
+  },
+  {
+    "name": "Temple of Thunder",
+    "replaces": "Military Academy",
+    "uniqueTo": "Ryuji's Haven",
+    "cost": 300,
+    "requiredTech": "Military Science",
+    "uniques": [
+      "Units trained in this city gain +20% Strength",
+      "Provides 2 Production per military unit in the empire",
+      "Provides 1 Happiness for every 10 Gold produced in this city"
+    ]
+  },
+  {
+    "name": "Hall of Conquest",
+    "cost": 300,
+    "uniqueTo": "Ryuji's Haven",
+    "culture": 5,
+    "requiredTech": "Construction",
+    "requiredBuildings": ["Warrior's Arena"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+2 Culture for every city captured",
+      "Provides 1 Happiness for every 10 Gold produced in this city",
+      "Provides 1 Happiness for every 10 Culture produced in this city"
+    ]
+  },
+  {
+    "name": "Citadel of Fury",
+    "cost": 500,
+    "uniqueTo": "Ryuji's Haven",
+    "production": 8,
+    "requiredTech": "Engineering",
+    "requiredBuildings": ["Forge of Wrath"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+15% Strength for all units when fighting in enemy territory",
+      "Provides +1 Gold for every city captured",
+      "Provides 1 Happiness for every 10 Gold produced in this city"
+    ]
+  },
+  {
+    "name": "Eternal Fortress",
+    "cost": 800,
+    "uniqueTo": "Ryuji's Haven",
+    "production": 10,
+    "requiredTech": "Replaceable Parts",
+    "requiredBuildings": ["Temple of Thunder"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+25% Strength for all units",
+      "Provides +2 Production for every city captured",
+      "Halves military unit maintenance costs across the empire"
+    ]
+  },
+  {
+    "name": "Arcane Academy",
+    "replaces": "University",
+    "uniqueTo": "Morgana's Empire",
+    "science": 4,
+    "culture": 2,
+    "cost": 200,
+    "requiredTech": "Education",
+    "uniques": [
+      "+1 Science for every 3 citizens in this city",
+      "+2 Great Scientist points per turn",
+      "Reduces Unhappiness in the city by 1"
+    ]
+  },
+  {
+    "name": "Gilded Bazaar",
+    "replaces": "Market",
+    "uniqueTo": "Morgana's Empire",
+    "gold": 3,
+    "culture": 1,
+    "cost": 150,
+    "requiredTech": "Currency",
+    "uniques": [
+      "+1 Gold for every 5 citizens in this city",
+      "+1 Culture for every Luxury Resource worked by this city"
+    ]
+  },
+  {
+    "name": "Sanctuary of Serenity",
+    "cost": 300,
+    "uniqueTo": "Morgana's Empire",
+    "culture": 8,
+    "requiredTech": "Drama and Poetry",
+    "requiredBuildings": ["Monument"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+2 Culture for every city in the empire",
+      "Provides +1 Happiness for every Wonder in the empire",
+      "Provides 1 Happiness for every 10 Culture produced in this city"
+    ]
+  },
+  {
+    "name": "Hall of Enlightenment",
+    "cost": 450,
+    "uniqueTo": "Morgana's Empire",
+    "science": 10,
+    "requiredTech": "Printing Press",
+    "requiredBuildings": ["Arcane Academy"],
+    "isNationalWonder": true,
+    "uniques": [
+      "+2 Science for every Wonder in the empire",
+      "+10% Science when Happiness is positive",
+      "Provides 1 Happiness for every 10 Science produced in this city"
+    ]
+  }
 ]
